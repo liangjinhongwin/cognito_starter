@@ -17,7 +17,17 @@ function FormErrors(props) {
         </div>
       </div>
     );
-  } else {
+  }
+  else if (props.formerrors && props.formerrors.cognito) {
+    return (
+      <div className="error container help is-danger">
+        <div className="row justify-content-center">
+          {props.formerrors.cognito.message}
+        </div>
+      </div>
+    );
+  }
+  else {
     return <div />;
   }
 }
