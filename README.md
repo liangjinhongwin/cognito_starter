@@ -14,7 +14,6 @@
 ## Data Storage and Retrieval
 - All Items pulled from a Lambda Function from an AWS datastore of your choosing.
 - Images are stored in an AWS S3 bucket and only the URL saved to the database.
-
 ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/dynamodb.PNG)
 
 ## Page Flow
