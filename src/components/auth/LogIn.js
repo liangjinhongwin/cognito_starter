@@ -40,8 +40,9 @@ class LogIn extends Component {
     //passed to the api as an attribute.
     try {
       const user = await Auth.signIn(this.state.username, this.state.password);
-      console.log(user);
-      this.props.history.push("/");
+      this.props.auth.authenticateUser(true);
+      this.props.auth.setAuthUser(user);
+      this.props.history.push("/products");
     } catch (error) {
       let err = null;
       !error.message ? err = { "message": error } : err = error;
@@ -68,7 +69,6 @@ class LogIn extends Component {
         <div className="container">
           <h1>Log in</h1>
           <FormErrors formerrors={this.state.errors} />
-
           <form onSubmit={this.handleSubmit}>
             <div className="field">
               <p className="control has-icons-left">
