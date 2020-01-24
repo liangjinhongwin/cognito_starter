@@ -34,29 +34,30 @@
                 });
             });
        ```
+       
      - Sample code in Lambda:  
        ```
         const AWS = require("aws-sdk");
         const docClient = new AWS.DynamoDB.DocumentClient({ region: 'us-east-1' });
 
         exports.handler = async event => {
-        const params = {
-            TableName: "Products"
-        };
-        
-        try {
-            const data = await docClient.scan(params).promise();
-            const response = {
-                statusCode: 200,
-                body: JSON.stringify(data.Items)
+            const params = {
+                TableName: "Products"
             };
-            return response;
-        }
-        catch (e) {
-            return {
-                statusCode: 500
-            };
-        }
+            
+            try {
+                const data = await docClient.scan(params).promise();
+                const response = {
+                    statusCode: 200,
+                    body: JSON.stringify(data.Items)
+                };
+                return response;
+            }
+            catch (e) {
+                return {
+                    statusCode: 500
+                };
+            }
         };
 
        ```
