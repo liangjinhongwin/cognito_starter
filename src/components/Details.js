@@ -7,13 +7,17 @@ const Details = (props) => {
 
     const renderDetails = (product) => {
         return (
-            <div className="mx-auto">
-                <img src={product.imageUrl} alt="" />
-                <ul>
-                    <li>Product ID: {product.productId}</li>
-                    <li>Product Name: {product.name}</li>
-                    <li>Price: ${product.price}</li>
-                </ul>
+            <div>
+                <figure className="d-flex justify-content-center">
+                    <img src={product.imageUrl} alt="" />
+                </figure>
+                <div className="d-flex justify-content-center">
+                    <ul>
+                        <li>Product ID: {product.productId}</li>
+                        <li>Product Name: {product.name}</li>
+                        <li>Price: ${product.price}</li>
+                    </ul>
+                </div>
             </div>
         );
     }

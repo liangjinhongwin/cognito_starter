@@ -4,11 +4,11 @@
 - Uses Cognito Identity Service for user registration and authentication.
 - When a user is authenticated, they can view an "Products" page, this can be any form of product that can be stored in a database.
 - If the user is not authenticated, this page and its relevant links should not be accessible.
- - Before logging in:
- ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/home.PNG)
+  - Before logging in:
+  ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/home.PNG)
 
- - After logging in, it will jumps to "Products" page:
- ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/products.PNG)
+  - After logging in, it will jumps to "Products" page:
+  ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/products.PNG)
  
 
 ## Data Storage and Retrieval
