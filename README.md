@@ -7,8 +7,9 @@
   - Before logging in:
     ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/home.PNG)
 
-  - After logging in, it will jumps to "Products" page:
+  - After logging in, it will redirect to "Products" page:
     ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/products.PNG)
+    - Click on product id to see product details
  
 
 ## Data Storage and Retrieval
@@ -62,5 +63,5 @@
 ## Page Flow
 - Registration with email confirmation
 - Login and Logout
-- Item List
-- Item Detail
+- Products List
+- Product Detail
