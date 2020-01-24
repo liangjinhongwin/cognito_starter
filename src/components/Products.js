@@ -33,7 +33,7 @@ const Products = (props) => {
                         <tr key={i}>
                             <td><Link to={{ pathname: `/product/${product.productId}`, state: product }} >{product.productId}</Link></td>
                             <td>{product.name}</td>
-                            <td>{product.price}</td>
+                            <td>${product.price}</td>
                         </tr>
                     )}
                 </tbody>

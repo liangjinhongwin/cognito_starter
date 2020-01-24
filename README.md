@@ -9,7 +9,8 @@
 
   - After logging in, it will redirect to "Products" page:
     ![](https://github.com/liangjinhongwin/cognito_starter/blob/master/public/products.PNG)
-    - Click on product id to see product details
+
+  - Click on "Product ID" to see product details
  
 
 ## Data Storage and Retrieval
@@ -64,4 +65,4 @@
 - Registration with email confirmation
 - Login and Logout
 - Products List
-- Product Detail
+- Product Details
